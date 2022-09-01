@@ -1,0 +1,8 @@
+version: '3'
+services:
+  react-dot:
+    build: ./
+    image: msdqn-dev
+    container_name: "msdqn-dev-containerized"
+    ports:
+      - "80:8080"
