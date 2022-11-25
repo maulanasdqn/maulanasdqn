@@ -1,8 +1,8 @@
 import { FC, FormEventHandler, ReactNode, ReactElement } from "react";
 
 interface Props {
-  onSubmit: FormEventHandler<HTMLFormElement>;
-  children: ReactNode;
+  onSubmit?: FormEventHandler<HTMLFormElement>;
+  children?: ReactNode;
 }
 
 const Form: FC<Props> = ({ onSubmit, children }): ReactElement => {
