@@ -26,7 +26,7 @@ describe("Test Navbar Logo", () => {
   test("Logo harus punya src dan harus berukuran 40", () => {
     render(<Navbar />);
     const logo = screen.getByRole("img");
-    expect(logo).toHaveAttribute("src", "logo.svg");
+    expect(logo).toHaveAttribute("src", "/src/assets/react.svg");
     expect(logo).toHaveAttribute("alt", "Logo");
     expect(logo).toHaveAttribute("width", "40");
   });
