@@ -10,7 +10,9 @@
     "lint": "eslint src/**/*.{ts,tsx}",
     "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx,css,md,json}' --config ./.prettierrc",
-    "test": "vitest"
+    "test": "vitest",
+    "test:run": "vitest --run",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@unocss/preset-uno": "^0.46.5",
@@ -35,6 +37,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.2",
     "jsdom": "^20.0.0",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
